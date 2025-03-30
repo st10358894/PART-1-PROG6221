@@ -1,0 +1,4 @@
+C:\Users\RC_Student_lab\source\repos\assignmentDraft\obj\Debug\net8.0\assignmentDraft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RC_Student_lab\source\repos\assignmentDraft\obj\Debug\net8.0\assignmentDraft.AssemblyInfoInputs.cache
+C:\Users\RC_Student_lab\source\repos\assignmentDraft\obj\Debug\net8.0\assignmentDraft.AssemblyInfo.cs
+C:\Users\RC_Student_lab\source\repos\assignmentDraft\obj\Debug\net8.0\assignmentDraft.csproj.CoreCompileInputs.cache
