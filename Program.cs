@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Speech.Synthesis;
+using System.Threading;
 
 class CybersecurityChatbot
 {
@@ -15,8 +16,7 @@ class CybersecurityChatbot
         Console.WriteLine("How are you today?");
         string userResponse = Console.ReadLine();
         RespondToUserMood(userResponse);
-
-        Console.WriteLine("\nI'm RELEEY AI, your helpful assistant. I can assist you with various cybersecurity topics.");
+        Console.WriteLine("I'm RELEEY AI, your helpful assistant. My purpose is to assist and provide information on a wide range of topics, including cybersecurity.");
         RunChatbot();
     }
 
@@ -50,7 +50,7 @@ class CybersecurityChatbot
       |__/  |__/ \_______/|__/ \_______/ \_______/ \____  $$
                                                   /$$  | $$
                                                  |  $$$$$$/
-                                                  \______/
+                                                  \______/ 
         ");
         Console.ResetColor();
     }
@@ -64,7 +64,10 @@ class CybersecurityChatbot
             Console.WriteLine("2. Password Safety");
             Console.WriteLine("3. Phishing");
             Console.WriteLine("4. Malware");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. Ransomware");
+            Console.WriteLine("6. Firewalls");
+            Console.WriteLine("7. Encryption");
+            Console.WriteLine("8. Exit");
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("Enter a number or type a topic: ");
@@ -77,7 +80,7 @@ class CybersecurityChatbot
                 continue;
             }
 
-            if (input == "exit" || input == "5")
+            if (input == "exit" || input == "8")
             {
                 Console.WriteLine("Goodbye! Stay safe online.");
                 break;
@@ -107,6 +110,18 @@ class CybersecurityChatbot
             case "4":
             case "malware":
                 Console.WriteLine("Malware is short for 'malicious software.' It's a type of software that's designed to harm or exploit a computer system. Examples of malware include viruses, worms, and trojans.");
+                break;
+            case "5":
+            case "ransomware":
+                Console.WriteLine("Ransomware is a type of malware that encrypts a victim's files and demands a ransom in exchange for the decryption key.");
+                break;
+            case "6":
+            case "firewalls":
+                Console.WriteLine("A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.");
+                break;
+            case "7":
+            case "encryption":
+                Console.WriteLine("Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access.");
                 break;
             default:
                 Console.WriteLine("I didn't quite understand that. Could you rephrase?");
